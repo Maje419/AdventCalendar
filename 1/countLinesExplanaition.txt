@@ -1,0 +1,18 @@
+In the first day of the calendar, I was handed a file with 2000 numbers, and told to find out how many of these were in increasing order.
+I decided to program the counter in C, as this is what i would normally do with large amounts of data. C is not an easy language to learn
+and a lot of stuff can go wrong when using it, but being very low-level, I can squeeze a lot of performance out of it. In the case of 2000
+numbers, this doesn't matter at all, but put a couple more zeros at the end, and you might just save time by using C. This code speaks
+for itself to anyone familiar with C, as the task was pretty simple. The only problem I faced was a tricky off-by-one error, since the first
+line is not to count towards the increasing count.
+
+As for the second challange of the day, I had to compare the sum of 3 lines in a window. My main goal was figuring out a way to solve this with only
+one pass of the file, doing it in O(n) time. The solution I devised was as follows: 
+    0.  Initiate 3 variables to hold the 3 sums that can be active in each window.
+    1.  Deal with the first two lines, as these are special cases.
+    2.  Load each line into 3 the 3 sum variables.
+    3.  Every new line I read (after the first 2 lines), one of the sums must contain 3 lines worth of numbers. 
+        Find this line, and compare it to the last sum of 3 lines.
+    4. $$ Only 1 pass needed $$
+Finding out which sum had been completed was simple. The A-sum, which was the only sum to have the first line loaded into it, would 3 lines loaded
+into it on line 3 (Line 1 + Line 2 + Line 3). Likewise, the B-sum would finnish at line 4 (Line 2, Line 3, Line 4). Therefore, I could use a simple
+modulo operation to find which sum had completed for each line. 
