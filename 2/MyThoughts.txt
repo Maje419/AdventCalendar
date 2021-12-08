@@ -1,0 +1,11 @@
+Haskell is a functional language, which means that all statements are considered functions. This means that all statements are calculated back to a single value.
+This allows for programming without side-effect (if we ignore for now IO, which obviously will have side effects).
+Admitadly, it has been a long time since I last programmed anything in Haskell, so for todays exercise, I went back to where I started when learning Haskell
+for the first time: The book,  "Learn You a Haskell for Great Good!".
+
+It's a pretty funny book, with loads of good examples and working code-snippets. With the help of the Haskell bible, I managed to solve the first exercise
+in a pretty simple way. I parse each line into a tuple consisting of a string and an integer. This allows me to look for wheter "forward" or "up" are part 
+of each line, and then act accordingly. 
+
+For the second exercise of today, I didn't really have to change much in the general thought process of my code. I work a little more with tuples, as several 
+times I had to return multiple values

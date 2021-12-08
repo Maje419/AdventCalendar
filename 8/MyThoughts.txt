@@ -1,0 +1,15 @@
+My head is empty. I only feel pain. But i did something with parallel programming, which is nice.
+
+I am only kidding. I started this morning trying to figure out how to actually solve the exercise in a non-bruteish way. This proved fruitless, 
+and in desperation I decided to bruteforce the solution. My thought process was something like this: 
+Left brain: "Oh, it's an algorithmic problem, this is going to be exciting!"
+Right brain: "Or we do many scramble of all possible mappings from chacater to edge for each line"
+Left brain: "Oh no, that will take too long! There are 7! permutations for each line!"
+Right brain: "Sowwy, me no hear you over the sound of 8 cores at 100%"
+Left brain: *Sigh*
+
+Oh, btw, thank you to jeantimex on Stackoverflow for giving me the exact code I needed to produce permutations of a string. 
+
+265 lines is a bit excessive though. I have left no helpful comments, as the code took a great leap in difficulty today, and I am really
+not about it. 
+

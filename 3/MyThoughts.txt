@@ -1,0 +1,6 @@
+For today, I decided to realx a bit. Learning Haskell again yesterday took up a lot of my time, so today, I decided to use Python.
+I am quite familiar with Python, and everything is just easy(er) in this language.
+Going through all lines in the input and checking the number of 1's was not hard, but after having done so by hand, I realized that
+I probably should have used NumPy to sum the contents of each of the 12 collumns, then dividing by 2.
+
+Python also has a method for convering binary to deciman, which I used for exercise 2.
